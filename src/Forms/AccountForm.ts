@@ -22,7 +22,7 @@ export class AccountForm {
         (c as Xrm.Controls.StringControl).clearNotification(AccountAttributes.WebSiteURL);
       } else {
         (c as Xrm.Controls.StringControl).setNotification(
-          "Hi, This is Invalid Website Address! Please enter a valid URL. Thanks",
+          "Hi, This is Invalid Website Address!",
           AccountAttributes.WebSiteURL,
         );
       }
