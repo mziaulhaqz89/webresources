@@ -1,8 +1,8 @@
 // Using @types/xrm - no imports needed, Xrm is globally available
 import { ContactAttributes } from "../constants/EntityAttributes";
 
-export default class ContactForm {
-  static async onload(context: Xrm.Events.EventContext): Promise<void> {
+export class ContactForm {
+  static async onLoad(context: Xrm.Events.EventContext): Promise<void> {
     const formContext = context.getFormContext();
     console.log("ContactForm loaded");
     
@@ -27,7 +27,7 @@ export default class ContactForm {
         (control as Xrm.Controls.StringControl).clearNotification(ContactAttributes.EmailAddress1);
       } else {
         (control as Xrm.Controls.StringControl).setNotification(
-          "Please enter a valid email address", 
+          "Please enter a valid email address TEST", 
           ContactAttributes.EmailAddress1
         );
       }

@@ -5,6 +5,7 @@ module.exports = {
   // entry: "./src/index.ts",
   entry: {
     mzh_accountform: "./src/Forms/AccountForm.ts",
+    mzh_contactform: "./src/Forms/ContactForm.ts",
   },
   module: {
     rules: [
